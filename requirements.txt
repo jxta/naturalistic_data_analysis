@@ -9,7 +9,7 @@ matplotlib
 seaborn
 nltk
 nibabel
-brainiak
+#brainiak
 nilearn
 nltools >= 0.4.2
 hypertools
