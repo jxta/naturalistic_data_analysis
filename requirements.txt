@@ -3,20 +3,8 @@
 
 numpy
 scipy
-scikit-learn
 pandas
 matplotlib
-seaborn
-nltk
-nibabel
-#brainiak
-nilearn
-nltools >= 0.4.2
-hypertools
-timecorr
-pliers
-statesegmentation
-nltk
 networkx
 datalad >= 0.12.6
 requests
