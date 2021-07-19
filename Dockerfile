@@ -1,11 +1,9 @@
-# FROM python:3
-FROM jupyter/datascience-notebook
-
-WORKDIR /usr/src/app
+FROM ubuntu:latest
+RUN apt-get update && apt-get -y update
+RUN apt-get install -y build-essential python3.6 python3-pip python3-dev git
+RUN pip3 -q install pip --upgrade
 
 COPY requirements.txt ./
-
-RUN apt-get update && apt-get install -y git
 
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
